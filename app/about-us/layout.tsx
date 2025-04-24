@@ -6,7 +6,8 @@ export default function AboutUsLayout({
   return (
     <div>
       {children}
-      AboutUs layout
+      <hr/>
+      <div>AboutUs layout</div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { API_URL } from "../app/constants";
 import styles from "../styles/movie-info.module.css";
 
@@ -26,6 +27,7 @@ export default async function MovieInfo({ id } : {id: string}){
             <a href={movie.homepage} target={"_blank"}>
               Homepage &rarr;
             </a>
+            <Link href={`/movies/${id}/credits`}>주요인물</Link>
           </div>
         </div>
       );
