@@ -16,6 +16,7 @@ export default function Navigation(){
                 <li>
                     <Link href="/about-us">About us</Link>{path === "/about-us" && "🔥"}
                 </li>
+                {/* credits, videos, providers, similar */}
             </ul>
         </nav>
     );

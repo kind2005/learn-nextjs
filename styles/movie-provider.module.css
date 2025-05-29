@@ -1,0 +1,11 @@
+.poster {
+  border-radius: 20px;
+  width: 100px;
+  place-self: center;
+}
+
+.list {
+  width: 100px;
+  display: inline-block;
+  padding: 0 10px;
+}

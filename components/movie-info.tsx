@@ -24,10 +24,10 @@ export default async function MovieInfo({ id } : {id: string}){
             <h1 className={styles.title}>{movie.title}</h1>
             <h3>⭐️ {movie.vote_average.toFixed(1)}</h3>
             <p>{movie.overview}</p>
-            <a href={movie.homepage} target={"_blank"}>
-              Homepage &rarr;
+            <a href={movie.homepage} target={"_blank"} className="px-4 py-2">
+              <span className="rounded-full bg-white text-neutral-950">Homepage</span> &rarr;
             </a>
-            <Link href={`/movies/${id}/credits`}>주요인물</Link>
+            <Link href={`/movies/${id}/credits`}><span className="rounded-full bg-white text-neutral-950">주요인물</span> &rarr;</Link>
           </div>
         </div>
       );
